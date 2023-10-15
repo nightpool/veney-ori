@@ -10,5 +10,8 @@
   "devDependencies": {
     "vite": "^4.4.5"
   },
-  "license": "AGPL-3.0-or-later"
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@orillusion/core": "^0.6.9"
+  }
 }
