@@ -12,6 +12,7 @@
   },
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@orillusion/core": "^0.6.9"
+    "@orillusion/core": "^0.6.9",
+    "@orillusion/physics": "^0.2.0"
   }
 }

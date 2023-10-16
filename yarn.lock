@@ -112,10 +112,23 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
-"@orillusion/core@^0.6.9":
+"@orillusion/ammo@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@orillusion/ammo/-/ammo-0.1.1.tgz#7d2e206029f0a0a0563f752cf1b7a1bd14b89874"
+  integrity sha512-5zjxCQq8FKQihxh8ZWI5ASelTaIz/QUino5HISOWWvpwXrYtzwptDA8MuQonASseQwo1WkWu+jmuNMdusdNuww==
+
+"@orillusion/core@^0.6.0", "@orillusion/core@^0.6.9":
   version "0.6.9"
   resolved "https://registry.yarnpkg.com/@orillusion/core/-/core-0.6.9.tgz#5857a58aed583f55ca8f3ab87c99839ed408dcde"
   integrity sha512-AYBqDUe8eykv1RX6oGM0iirhX1Rz05rme0GV1jNNP3DgfuxuOspW8II7ZYMwGdFpjNUsLBpJWRPRhv8WosbcxA==
+
+"@orillusion/physics@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@orillusion/physics/-/physics-0.2.0.tgz#ae54617b608a87e30cc9cda48b90511aa43c4252"
+  integrity sha512-1X1kKm2sHAWTGTRQbotIVfqLbLwLLbii5024OmuTYcqSsOC5ZEWig6gwuxxdElX8mKkif05/H5zTLAuZEjDMwQ==
+  dependencies:
+    "@orillusion/ammo" "^0.1.1"
+    "@orillusion/core" "^0.6.0"
 
 esbuild@^0.18.10:
   version "0.18.20"
