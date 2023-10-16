@@ -1,13 +1,8 @@
 
-<<<<<<< HEAD
-import { AtmosphericComponent, BoxGeometry, Camera3D, DirectLight, Engine3D, HoverCameraController, LitMaterial, MeshRenderer, Object3D, Scene3D, View3D, Vector3, Quaternion, VertexAttributeName } from '@orillusion/core';
-import { ColliderComponent, BoxColliderShape } from '@orillusion/core';
-import { Physics, Rigidbody, ConvexHullColliderShape } from './physics.js';
-=======
 import { AtmosphericComponent, BoxGeometry, Camera3D, DirectLight, Engine3D, HoverCameraController, LitMaterial, MeshRenderer, Object3D, Scene3D, View3D, Vector3, Quaternion, VertexAttributeName, SkyRenderer } from '@orillusion/core';
 import { ColliderComponent, BoxColliderShape, SphereColliderShape, CapsuleColliderShape, MeshColliderShape } from '@orillusion/core';
+import { Physics, Rigidbody, ConvexHullColliderShape } from './physics.js';
 import { Ammo, Physics, Rigidbody } from '@orillusion/physics';
->>>>>>> a695652... board
 import './tap-polyfill.js';
 import skymap from '../textures/skybox.png';
 
@@ -76,8 +71,8 @@ Object.entries(meshes).forEach(async ([key, url], i) => {
   mesh.getComponentsInChild(MeshRenderer).forEach(r => {
     r.castShadow = true;
     r.receiveShadow = true;
-  });
 
+  });
   let body = mesh.addComponent(Rigidbody);
   body.friction = 0.8;
   body.restitution = 0.6;
